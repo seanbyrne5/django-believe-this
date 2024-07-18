@@ -1,8 +1,9 @@
 from django.db import models
 from django.contrib.auth.models import User
 
-# Create your models here.
 STATUS = ((0, "Draft"), (1, "Published"))
+
+# Create your models here.
 
 
 class Post(models.Model):
@@ -16,6 +17,7 @@ class Post(models.Model):
     status = models.IntegerField(choices=STATUS, default=0)
     excerpt = models.TextField(blank=True)
     updated_on = models.DateTimeField(auto_now=True)
+
     class Meta:
         ordering = ["-created_on"]
 
