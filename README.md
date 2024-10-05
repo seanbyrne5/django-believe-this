@@ -1,140 +1,62 @@
 # Codestar
 
-In this section, you will include one or two paragraphs providing an overview of your project. Essentially, this part is your sales pitch. At this stage, you should have a name for your project so use it! Don’t introduce the project as a Portfolio project for the diploma. In this section, describe what the project hopes to accomplish, who it is intended to target and how it will be useful to the target audience. 
+Welcome to Codestar, a dynamic platform designed to bridge the gap between aspiring developers and the world of coding. Codestar aims to provide accessible resources, tutorials, and a supportive community for individuals eager to embark on their programming journey. Whether you’re a high school student exploring career options, a college student looking to bolster your skills, or a professional considering a career change, CodeConnect offers tailored content to meet your unique needs.
 
-For example; Love Running is a site that hopes to help keep people motivated to meet up for runs on a regular basis in Dublin, Ireland. The site will be targeted toward runners who are looking for a way to socialise and keep themselves fit. Love Running will be useful for runners to see exactly when and where they should be to join the running club. 
+Our project focuses on demystifying programming concepts and making them approachable for all. Through interactive tutorials, engaging blog posts, and a community forum, CodeConnect empowers users to learn at their own pace while fostering a sense of belonging among like-minded individuals. By providing essential tools and knowledge, we hope to inspire the next generation of developers to not only enhance their skills but also to feel confident in their coding abilities. Join us in creating a vibrant learning environment that champions growth and collaboration in the tech industry!
 
-![Responsice Mockup](https://github.com/lucyrush/readme-template/blob/master/media/love_running_mockup.png)
+![Am I Responsive]()
 
 ## Features 
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so. You will need to explain what value each of the features provides for the user, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+Codestar offers a dynamic platform designed for coding enthusiasts to connect, share, and collaborate. Users can create personalized profiles to showcase their skills and engage with a vibrant community through a robust blog system, where they can write and discuss insightful articles on various programming topics. The site encourages interaction with features that allow users to comment on and like posts, fostering community engagement. Additionally, a dedicated collaboration request form streamlines the process for users seeking project partners or mentorship. With its responsive design, CodeConnect ensures accessibility across devices, empowering users to connect and learn anytime, anywhere.
 
 ### Existing Features
 
-- __Navigation Bar__
+### User Profiles
+Each user has a personalized profile where they can showcase their coding skills, share their achievements, and connect with like-minded individuals. This feature enables users to build a professional presence in the coding community, which can be valuable for networking and collaboration opportunities.
 
-  - Featured on all three pages, the full responsive navigation bar includes links to the Logo, Home page, Gallery and Sign Up page and is identical in each page to allow for easy navigation.
-  - This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
+### Blog System
+The heart of Codestar is its blog system, allowing users to create and share insightful articles on various programming topics. This feature not only facilitates knowledge sharing but also encourages users to engage with each other through comments and discussions, enhancing their understanding of coding concepts.
 
-![Nav Bar](https://github.com/lucyrush/readme-template/blob/master/media/love_running_nav.png)
+### Comment and Like Functionality
+Users can express their opinions and interact with blog content through comments and likes. This interactive feature fosters community engagement, allowing users to support each other and recognize valuable content, thus promoting a collaborative learning atmosphere.
 
-- __The landing page image__
+### Collaboration Request Form
+This essential feature enables users to submit requests for collaboration on projects or mentorship opportunities. It streamlines the process of finding coding partners and fosters a spirit of cooperation, ensuring that users can easily connect with others who share similar interests and goals.
 
-  - The landing includes a photograph with text overlay to allow the user to see exactly which location this site would be applicable to. 
-  - This section introduces the user to Love Running with an eye catching animation to grab their attention
-
-![Landing Page](https://github.com/lucyrush/readme-template/blob/master/media/love_running_landing.png)
-
-- __Club Ethos Section__
-
-  - The club ethos section will allow the user to see the benefits of joining the Love Running meetups, as well as the benefits of running overall. 
-  - This user will see the value of signing up for the Love Running meetups. This should encourage the user to consider running as their form of exercise. 
-
-![Club Ethos](https://github.com/lucyrush/readme-template/blob/master/media/love_running_ethos.png)
-
-- __Meetup Times section__
-
-  - This section will allow the user to see exactly when the meetups will happen, where they will be located and how long the run will be in kilometers. 
-  - This section will be updated as these times change to keep the user up to date. 
-
-![Meetup Times](https://github.com/lucyrush/readme-template/blob/master/media/love_running_times.png)
-
-- __The Footer__ 
-
-  - The footer section includes links to the relevant social media sites for Love Running. The links will open to a new tab to allow easy navigation for the user. 
-  - The footer is valuable to the user as it encourages them to keep connected via social media
-
-![Footer](https://github.com/lucyrush/readme-template/blob/master/media/love_running_footer.png)
-
-- __Gallery__
-
-  - The gallery will provide the user with supporting images to see what the meet ups look like. 
-  - This section is valuable to the user as they will be able to easily identify the types of events the organisation puts together. 
-
-![Gallery](https://github.com/lucyrush/readme-template/blob/master/media/love_running_gallery.png)
-
-- __The Sign Up Page__
-
-  - This page will allow the user to get signed up to Love Running to start their running journey with the community. The user will be able specify if they would like to take part in road, trail or both types of running. The user will be asked to submit their full name and email address. 
-
-![Sign Up](https://github.com/lucyrush/readme-template/blob/master/media/love_running_signup.png)
-
-For some/all of your features, you may choose to reference the specific project files that implement them.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+### Responsive Design
+Codestar's mobile-friendly design ensures that users can access the platform seamlessly on any device. This accessibility empowers users to engage with the community and access learning resources anytime, anywhere, making it easier for them to achieve their coding aspirations.
 
 ### Features Left to Implement
 
-- Another feature idea
+- The Code Challenge Arena is an interactive feature where users can participate in coding competitions and challenges. This section allows users to test their skills against timed coding problems, ranging from beginner to advanced levels. Users can choose to compete individually or form teams to tackle challenges collaboratively.
+
+Each challenge comes with a leaderboard, showcasing the top performers and encouraging a friendly competitive spirit within the community. This feature not only helps users improve their coding abilities through practice but also fosters camaraderie as users cheer each other on. Additionally, users can submit their solutions for review, and mentors or experienced developers can provide feedback and tips, enhancing the learning experience for all participants.
+
+This feature aims to create a fun and engaging environment for coders to learn, practice, and showcase their skills while building connections with peers in the coding community.
 
 ## Testing 
 
-In this section, you need to convince the assessor that you have conducted enough testing to legitimately believe that the site works well. Essentially, in this part you will want to go over all of your project’s features and ensure that they all work as intended, with the project providing an easy and straightforward way for the users to achieve their goals.
 
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
 
 ### Validator Testing 
 
-- HTML
-  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fcode-institute-org.github.io%2Flove-running-2.0%2Findex.html)
-- CSS
-  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%3Fdoc%3Dhttps%253A%252F%252Fcode-institute-org.github.io%252Flove-running-2.0%252Findex.html&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en#css)
+This project has not been completely finished and validator testing has not been possible.
 
 ### Unfixed Bugs
 
-You will need to mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a big variable to consider, paucity of time and difficulty understanding implementation is not a valid reason to leave bugs unfixed. 
+I am still working on fixing bugs throughout my project. 
 
 ## Deployment
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub) 
+To deploy my project, Codestar, I began by setting up a GitHub repository, where I uploaded all project files and ensured that the code was well-structured and organized. I created a .gitignore file to exclude unnecessary files and directories from being tracked, ensuring a clean repository. After committing and pushing the code to GitHub, I configured the repository settings to enable continuous integration, which allows for automatic testing and deployment updates.
 
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
-  - In the GitHub repository, navigate to the Settings tab 
-  - From the source section drop-down menu, select the Master Branch
-  - Once the master branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment. 
+Next, I proceeded to deploy Codestar on Heroku. I created a new Heroku app via the Heroku dashboard and connected it to my GitHub repository for seamless deployment. I configured the necessary environment variables, including database settings and secret keys, to ensure that the application runs smoothly in the Heroku environment. After setting up the required build packs and confirming that all dependencies were listed in the requirements.txt file, I initiated the deployment process. Once the build completed successfully, I verified that the application was live and fully functional on Heroku, allowing users to access Codestar with ease.
 
-The live link can be found here - https://code-institute-org.github.io/love-running-2.0/index.html 
+The live link can be found here - 
 
 
 ## Credits 
 
-In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-
-You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign up page are from This Open Source site
-- The images used for the gallery page were taken from this other open source site
-
-
-Congratulations on completing your Readme, you have made another big stride in the direction of being a developer! 
-
-## Other General Project Advice
-
-Below you will find a couple of extra tips that may be helpful when completing your project. Remember that each of these projects will become part of your final portfolio so it’s important to allow enough time to showcase your best work! 
-
-- One of the most basic elements of keeping a healthy commit history is with the commit message. When getting started with your project, read through [this article](https://chris.beams.io/posts/git-commit/) by Chris Beams on How to Write  a Git Commit Message 
-  - Make sure to keep the messages in the imperative mood 
-
-- When naming the files in your project directory, make sure to consider meaningful naming of files, point to specific names and sections of content.
-  - For example, instead of naming an image used ‘image1.png’ consider naming it ‘landing_page_img.png’. This will ensure that there are clear file paths kept. 
-
-- Do some extra research on good and bad coding practices, there are a handful of useful articles to read, consider reviewing the following list when getting started:
-  - [Writing Your Best Code](https://learn.shayhowe.com/html-css/writing-your-best-code/)
-  - [HTML & CSS Coding Best Practices](https://medium.com/@inceptiondj.info/html-css-coding-best-practice-fadb9870a00f)
-  - [Google HTML/CSS Style Guide](https://google.github.io/styleguide/htmlcssguide.html#General)
-
-Getting started with your Portfolio Projects can be daunting, planning your project can make it a lot easier to tackle, take small steps to reach the final outcome and enjoy the process! 
+I based my project on the walkthough project as part of Portfolio Project 4.
