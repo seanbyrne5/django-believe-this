@@ -2,11 +2,10 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from .models import Post, Comment
+from .models import Post, Comment, Like  # Import Like model
 from .forms import CommentForm
 
 # Create your views here.
-
 
 class PostList(generic.ListView):
     """
@@ -51,6 +50,11 @@ def post_detail(request, slug):
     post = get_object_or_404(queryset, slug=slug)
     comments = post.comments.all().order_by("-created_on")
     comment_count = post.comments.filter(approved=True).count()
+    
+    liked = False
+    if post.likes.filter(user=request.user).exists():
+        liked = True
+
     if request.method == "POST":
         comment_form = CommentForm(data=request.POST)
         if comment_form.is_valid():
@@ -72,9 +76,45 @@ def post_detail(request, slug):
             "post": post,
             "comments": comments,
             "comment_count": comment_count,
-            "comment_form": comment_form
+            "comment_form": comment_form,
+            "liked": liked  # Pass whether the user has liked the post or not
         },
     )
+
+
+def like_post(request, post_id):
+    """
+    Handle liking or unliking a post.
+    """
+    post = get_object_or_404(Post, id=post_id)
+
+    liked = False
+    if post.likes.filter(user=request.user).exists():
+        post.likes.filter(user=request.user).delete()
+        liked = False
+    else:
+        Like.objects.create(user=request.user, post=post)
+        liked = True
+
+    return HttpResponseRedirect(reverse('post_detail', args=[post.slug]))
+
+
+def like_comment(request, comment_id):
+    """
+    Handle liking or unliking a comment.
+    """
+    comment = get_object_or_404(Comment, id=comment_id)
+
+    liked = False
+    if comment.likes.filter(user=request.user).exists():
+        comment.likes.filter(user=request.user).delete()
+        liked = False
+    else:
+        Like.objects.create(user=request.user, comment=comment)
+        liked = True
+
+    # Redirect back to the post where the comment belongs
+    return HttpResponseRedirect(reverse('post_detail', args=[comment.post.slug]))
 
 
 def comment_edit(request, slug, comment_id):
@@ -133,3 +173,4 @@ def comment_delete(request, slug, comment_id):
                              'You can only delete your own comments!')
 
     return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+

@@ -48,3 +48,21 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.author}"
+
+
+class Like(models.Model):
+    """
+    Stores a single like entry related to :model:`auth.User`
+    and :model:`blog.Post`.
+    Each user can like a post only once.
+    """
+    post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="likes")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="likes")
+    created_on = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        # Ensure that each user can only like a post once
+        unique_together = ('post', 'user')
+
+    def __str__(self):
+        return f"{self.user} liked {self.post.title}"
